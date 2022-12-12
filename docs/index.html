@@ -60,25 +60,12 @@
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
 
-        var urnen = [
-          {
-            name: "Juridicum 1",
-            oefnung: "Mo - Do, 09:00 - 18:00",
-            position: "Eingang Adenauerallee, Flur links",
-            cords: [50.72981, 7.10793],
-          },
-          {
-            name: "Juridicum 2",
-            oefnung: "Mo - Do, 09:00 - 16:00",
-            position: "Eingang Lennéstraße, Flur rechts",
-            cords: [50.72969, 7.10756],
-          },
-        ];
+        var urnen =[{"name": "Juridicum 1", "oefnung": "Mo - Do 09:00 - 18:00", "position": "Juridicum, Eingang Adenauerallee, Flur links", "cords": [50.72981, 7.10793]}, {"name": "Juridicum 2", "oefnung": "Mo - Do 09:00 - 16:00", "position": "Juridicum, Eingang Lennéstraße, Flur rechts", "cords": [50.72969, 7.10756]}, {"name": "Hofgarten-Mensa", "oefnung": "Mo - Do 09:00 - 14:00", "position": "Mensa-Zelt", "cords": [50.73344, 7.10273]}, {"name": "Hauptgebäude 1", "oefnung": "Mo - Do 09:00 - 18:00", "position": "Säulenhalle rechts", "cords": [50.73325, 7.10171]}, {"name": "Hauptgebäude 2", "oefnung": "Mo - Do 11:30 - 14:30", "position": "Säulenhallte links", "cords": [50.7331, 7.1016]}, {"name": "Hauptgebäude 3", "oefnung": "Mo - Do 09:00 - 18:00", "position": "Zentralgarderobe links", "cords": [50.7335, 7.10208]}, {"name": "Hauptgebäude 4", "oefnung": "Mo - Do 11:30 - 14:30", "position": "Zentralgarderobe rechts", "cords": [50.73364, 7.10177]}, {"name": "Pop-Mensa 1", "oefnung": "Mo - Do 09:00 - 15:00", "position": "Endenicher Allee 19, Foyer", "cords": [50.72696, 7.08318]}, {"name": "Pop-Mensa 2", "oefnung": "Mo - Do 11:00 - 14:30", "position": "Endenicher Allee 19, Foyer", "cords": [50.72703, 7.08304]}, {"name": "Geographie", "oefnung": "Mo - Do 09:00 - 16:30", "position": "Geographisches Institut, Meckenheimer Allee 166, Foyer", "cords": [50.72661, 7.09147]}, {"name": "Chemie", "oefnung": "Mo - Do 09:30 - 16:30", "position": "Chem. Institute, Gerhard-Domagk-Str. 1, bei den Hörsälen", "cords": [50.7337, 7.07187]}, {"name": "Hörsaalzentrum Poppelsdorf 1", "oefnung": "Mo - Do 09:30 - 18:00", "position": "Friedrich-Hirzebruch-Allee 5, Foyer", "cords": [50.72663, 7.08539]}, {"name": "Hörsaalzentrum Poppelsdorf 2", "oefnung": "Mo - Do 11:30 - 14:30", "position": "Friedrich-Hirzebruch-Allee 5, Foyer", "cords": [50.72665, 7.0853]}, {"name": "Anatomie", "oefnung": "Mo - Do 09:00 - 16:00", "position": "Nußallee 10, Foyer", "cords": [50.72682, 7.08917]}, {"name": "MNL", "oefnung": "Mo - Do 09:00 - 18:00", "position": "Friedrich-Hirzebruch-Allee 4, Foyer", "cords": [50.72677, 7.08644]}, {"name": "Venusberg 1", "oefnung": "Mo - Do 10:30 - 14:30", "position": "Kantine, Gebäude 32", "cords": [50.70086, 7.10677]}, {"name": "Venusberg 2", "oefnung": "Mo - Do 10:00 - 17:30", "position": "Lehrgebäude, Gebäude 10", "cords": [50.70283, 7.10064]}, {"name": "ULB", "oefnung": "Mo - Do 09:00 - 18:00", "position": "Adenauerallee 39-41, Foyer", "cords": [50.73141, 7.10855]}, {"name": "Psychologie", "oefnung": "Mo - Do 10:30 - 18:00", "position": "Kaiser-Karl-Ring 9, Flur rechts", "cords": [50.74562, 7.09318]}, {"name": "Mathematik", "oefnung": "Mo - Do 09:30 - 16:00", "position": "Mathematisches Institut, Wegelerstraße 10, Foyer", "cords": [50.72841, 7.08401]}, {"name": "Wanderurne Zentrum", "oefnung": "Mo 09:30 - 16:30", "position": "Anglistik: Regina-Pacis-Weg 5, vor den Schließfächern", "cords": [50.73451, 7.10521]}, {"name": "Wanderurne Zentrum", "oefnung": "Di 09:30 - 18:00", "position": "Geschichte: Konviktstraße 11, Foyer", "cords": [50.73524, 7.10731]}, {"name": "Wanderurne Zentrum", "oefnung": "Mi 09:00 - 16:30", "position": "Sprachlernzentrum: Lennéstraße 6, Foyer", "cords": [50.73027, 7.10526]}, {"name": "Wanderurne Zentrum", "oefnung": "Do 09:30 - 18:00", "position": "Kaiserstraße: Kaiserstraße 1", "cords": [50.73155, 7.10177]}, {"name": "Wanderurne Poppelsdorf", "oefnung": "Mo 09:30 - 14:30", "position": "Physik: Wolfgang-Paul-Hörsaalgebäude, Foyer", "cords": [50.72765, 7.09002]}, {"name": "Wanderurne Poppelsdorf", "oefnung": "Di 12:00 - 16:00", "position": "Informatik: Friedrich-Hirzebruch-Allee 8, Foyer", "cords": [50.72751, 7.08539]}, {"name": "Wanderurne Poppelsdorf", "oefnung": "Mi 09:30 - 14:30 ", "position": "Geodäsie: Nußallee 17, Foyer", "cords": [50.72764, 7.08667]}, {"name": "Wanderurne Poppelsdorf", "oefnung": "Do 09:00 - 17:00", "position": "AVZ: Endenicher Allee 11-13, Foyer", "cords": [50.72863, 7.08625]}];
 
         for (let urne_id in urnen) {
           let urne = urnen[urne_id];
           let popup =
-            "<b>" + urne.name + "</b>\n" + urne.position + "\n" + urne.oefnung;
+            "<b>" + urne.name + "</b><p>" + urne.position + "<br>" + urne.oefnung + "</p>";
           L.marker(urne.cords).addTo(map).bindPopup(popup);
         }
       };
