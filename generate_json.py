@@ -12,6 +12,7 @@ def main():
                 "oefnung": f'{row["Tag"].replace("–", "-")} {row["Uhrzeit"].replace("–", "-")}',
                 "position": row["Standort"],
                 "cords": [float(x) for x in row["Lat/Lon"].split("/")],
+                "wanderurne": row["Wanderurne"] == "1"
             })
 
     with open("urnen.json", "w") as f:
