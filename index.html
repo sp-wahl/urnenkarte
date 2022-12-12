@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Urnenplan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <!-- Position the map and title with Cascading Style Sheet (CSS) -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+      #map-title {
+        position: relative;
+        margin-top: 10px;
+        margin-left: 50px;
+        float: left;
+        background: white;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        padding: 6px 8px;
+        font-family: Helvetica;
+        font-weight: bold;
+        z-index: 800;
+      }
+      h1 {
+        font-size: 24px;
+
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        var map = L.map("map", {
+          center: [50.733, 7.0998], // This is the center of the map
+          zoom: 14, // from 1 (zoomed out) to 18 (zoomed in)
+          scrollWheelZoom: true,
+        });
+
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        var urnen = [
+          {
+            name: "Juridicum 1",
+            oefnung: "Mo - Do, 09:00 - 18:00",
+            position: "Eingang Adenauerallee, Flur links",
+            cords: [50.72981, 7.10793],
+          },
+          {
+            name: "Juridicum 2",
+            oefnung: "Mo - Do, 09:00 - 16:00",
+            position: "Eingang Lennéstraße, Flur rechts",
+            cords: [50.72969, 7.10756],
+          },
+        ];
+
+        for (let urne_id in urnen) {
+          let urne = urnen[urne_id];
+          let popup =
+            "<b>" + urne.name + "</b>\n" + urne.position + "\n" + urne.oefnung;
+          L.marker(urne.cords).addTo(map).bindPopup(popup);
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="map-title">
+      <h1>Urnenplan für die Wahlen zum 45. Studierendenparlament</h1>
+      Eine vollständige, rechtkräftige Liste findet sich in der <a href="https://wahlen.uni-bonn.de/de/dokumente">Wahlausschreibung</a>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
