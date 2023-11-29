@@ -2,10 +2,10 @@ Nr.,Bezeichnung,Tag,Uhrzeit,Standort,Lat/Lon,Wanderurne
 1,Juridicum 1,Mo – Do,09:00 – 18:00,"Juridicum, Eingang Adenauerallee, Flur links",50.72981/7.10793 ,0
 2,Juridicum 2,Mo – Do,09:00 – 16:00,"Juridicum, Eingang Lennéstraße, Flur rechts",50.72969/7.10756,0
 3,Hofgarten-Mensa,Mo – Do,09:00 – 14:00,Mensa-Zelt,50.73344/7.10273,0
-4,Hauptgebäude 1,Mo – Do,09:00 – 18:00,Säulenhalle rechts,50.73325/7.10171,0
-5,Hauptgebäude 2,Mo – Do,11:30 – 14:30,Säulenhalle links,50.73310/7.10160,0
-6,Hauptgebäude 3,Mo – Do,09:00 – 18:00,Zentralgarderobe links,50.73350/7.10208,0
-7,Hauptgebäude 4,Mo – Do,11:30 – 14:30,Zentralgarderobe rechts,50.73364/7.10177,0
+4,Rabinstraße Wahllokal 1,Mo – Do,09:00 – 18:00,Mutter-Kind-Raum,50.73434/7.09162,0
+5,Rabinstraße Wahllokal 2,Mo – Do,09:00 – 18:00,Schließfächer,50.73429/7.09168,0
+6,Hauptgebäude 1,Mo – Do,09:00 – 18:00,Zentralgarderobe rechts,50.73364/7.10177,0
+7,Hauptgebäude 2,Mo – Do,09:00 – 18:00,Cafe Unique,50.73321/7.10214,0
 8,Pop-Mensa 1,Mo – Do,09:00 – 15:00,"Endenicher Allee 19, Foyer",50.72696/7.08318,0
 9,Pop-Mensa 2,Mo – Do,11:00 – 14:30,"Endenicher Allee 19, Foyer",50.72703/7.08304,0
 10,Geographie,Mo – Do,09:00 – 16:30,"Geographisches Institut, Meckenheimer Allee 166, Foyer",50.72661/7.09147,0
@@ -19,11 +19,10 @@ Nr.,Bezeichnung,Tag,Uhrzeit,Standort,Lat/Lon,Wanderurne
 18,ULB,Mo – Do,09:00 – 18:00,"Adenauerallee 39-41, Foyer",50.73141/7.10855,0
 19,Psychologie,Mo – Do,10:30 – 18:00,"Kaiser-Karl-Ring 9, Flur rechts",50.74562/7.09318,0
 20,Mathematik,Mo – Do,09:30 – 16:00,"Mathematisches Institut, Wegelerstraße 10, Foyer",50.72841/7.08401,0
-21,Wanderurne Zentrum,Mo,09:30 – 16:30,"Anglistik: Regina-Pacis-Weg 5, vor den Schließfächern",50.73451/7.10521,1
-,Wanderurne Zentrum,Di,09:30 – 18:00,"Geschichte: Konviktstraße 11, Foyer",50.73524/7.10731,1
+21,Wanderurne Zentrum,Mo,09:30 – 16:30,"Geschichte: Konviktstraße 11, Foyer",50.73524/7.10731,1
+,Wanderurne Zentrum,"Di 09:30 – 16:30","<br/>Do 09:30 – 18:00",Info-Punkt,50.73408/7.10319,1
 ,Wanderurne Zentrum,Mi,09:00 – 16:30,"Sprachlernzentrum: Lennéstraße 6, Foyer",50.73027/7.10526,1
-,Wanderurne Zentrum,Do,09:30 – 18:00,Kaiserstraße: Kaiserstraße 1,50.73155/7.10177,1
-22,Wanderurne Poppelsdorf,Mo,09:30 – 14:30,"Physik: Wolfgang-Paul-Hörsaalgebäude, Foyer",50.72765/7.09002,1
+22,Wanderurne Poppelsdorf,Mo,09:00 – 17:00,"AVZ: Endenicher Allee 11-13, Foyer",50.72863/7.08625,1
 ,Wanderurne Poppelsdorf,Di,12:00 – 16:00,"Informatik: Friedrich-Hirzebruch-Allee 8, Foyer",50.72751/7.08539,1
 ,Wanderurne Poppelsdorf,Mi,09:30 – 14:30 ,"Geodäsie: Nußallee 17, Foyer",50.72764/7.08667,1
-,Wanderurne Poppelsdorf,Do,09:00 – 17:00,"AVZ: Endenicher Allee 11-13, Foyer",50.72863/7.08625,1
+,Wanderurne Poppelsdorf,Do,09:30 – 14:30,"Physik: Wolfgang-Paul-Hörsaalgebäude, Foyer",50.72765/7.09002,1
